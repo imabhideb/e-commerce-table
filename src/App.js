@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import MainTable from "./Components/MainTable";
+import {Routes, Route, BrowserRouter} from 'react-router-dom'
+import FurnitureDetails from "./Components/FurnitureDetails";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-full justify-center items-center flex flex-col">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainTable />} />
+          <Route path="/details" element={<FurnitureDetails />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
