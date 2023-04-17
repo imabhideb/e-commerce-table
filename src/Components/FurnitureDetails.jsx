@@ -7,7 +7,6 @@ const FurnitureDetails = () => {
     const [sliderData, setSliderData] = useState(ChairImage[0]);
 
     const handleClick = (index) => {
-        console.log(index)
         const slider = ChairImage[index]
         setSliderData(slider)
     }
