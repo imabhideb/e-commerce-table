@@ -14,13 +14,13 @@ const FurnitureDetails = () => {
     
 
   return (
-    <div className='w-[1350px] rounded-lg flex justify-center items-center mt-[40px] '>
+    <div className='w-[1350px] bg-slate-300 rounded-lg flex justify-center items-center mt-[40px] '>
         
         
         {/* Image Section */}
         <div className='w-[700px] h-[800px] flex flex-col gap-[80px] justify-center items-center '>
             <div className='w-[500px]'>
-                <img src={sliderData.value} height="300" width="500" alt="" />
+                <img src={sliderData.value} className=' rounded-lg' height="300" width="500" alt="" />
             </div>
             <div className='flex justify-center gap-[30px]'>
                 {
